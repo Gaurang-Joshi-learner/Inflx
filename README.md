@@ -41,7 +41,7 @@ When high intent is detected:
 def mock_lead_capture(name, email, platform):
     print(f"Lead captured successfully: {name}, {email}, {platform}")
 
-**Architecture Explanation**
+Architecture Explanation
 
 This project uses LangGraph to build a structured agent workflow.
 
@@ -66,7 +66,7 @@ Name, Email, Platform
 
 This ensures the agent remembers context across multiple turns (5–6 interactions), fulfilling the assignment requirement.
 
-**Conversation Flow**
+Conversation Flow
 User asks pricing → RAG responds
 User shows interest → intent switches to high_intent
 Agent asks for:
@@ -104,7 +104,7 @@ uvicorn app.main:app --reload
 cd frontend
 streamlit run app.py
 
-** WhatsApp Integration **
+WhatsApp Integration 
 
 To integrate this agent with WhatsApp:
 
@@ -119,4 +119,5 @@ Flow:
 WhatsApp → Twilio → FastAPI Webhook → Agent → Response → Twilio → User
 
 **Demo Video**
-
+Watch Demo:
+https://drive.google.com/file/d/1_3Vib6LyZaxjp3GBAN30PoloHeakplhW/view?usp=drive_link
